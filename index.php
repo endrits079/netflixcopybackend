@@ -1,23 +1,33 @@
 <?php
-require_once('db.php');
+require_once('./includes/db.php');
+require_once('./includes/classes/FormSanitizer.php');
+require_once('./includes/classes/ValidateInputs.php');
 header('Access-Control-Allow-Origin:*');
 $message ='';
 $succeed=false;
 $array = array();
 if(isset($_POST['register'])){
-    $fname = $_POST['first_name'];
-    $lname = $_POST['last_name'];
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $confirm_password= $_POST['confirm_password'];
+    $fname =FormSanitizer::sanitizeString($_POST['first_name']);
+    $lname =FormSanitizer::sanitizeString( $_POST['last_name']);
+    $username =FormSanitizer::sanitizeUsername($_POST['username']);
+    $email = FormSanitizer::sanitizeEmail($_POST['email']);
+    $password =FormSanitizer::sanitizePassword( $_POST['password']);
+    $confirm_password= FormSanitizer::sanitizePassword($_POST['confirm_password']);
 
-    $query = "INSERT INTO users(first_name,last_name,username,email,password) VALUES ('$fname','$lname','$username','$email','$password')";
- 
-    if($password!=$confirm_password){
-     $message='Password must match';
+    $fnameValid = ValidateInputs::ValidateName($fname);
+    $passwordValid = ValidateInputs::ValidatePassword($password,$confirm_password);
+    $usernameValid = ValidateInputs::ValidateUsername($username,$connect);
+    if($usernameValid!='true'){
+        $message=$usernameValid;
+    }
+    else if($fnameValid!= 'true'){
+        $message=$fnameValid;
+    }
+    else if($passwordValid!='true'){
+        $message=$passwordValid;
     }
     else {
+    $query = "INSERT INTO users(first_name,last_name,username,email,password) VALUES ('$fname','$lname','$username','$email','$password')";
         $result = mysqli_query($connect,$query);
         if($result){
             $message= "User Registered successfully";
@@ -30,8 +40,8 @@ if(isset($_POST['register'])){
 }
 
 if(isset($_POST['login'])){
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $email =FormSanitizer::sanitizeEmail($_POST['email']);
+    $password =FormSanitizer::sanitizePassword($_POST['password']);
     $query = "SELECT * from users WHERE email='$email' AND password='$password'";
     $result=mysqli_query($connect,$query);
     $result= mysqli_fetch_assoc($result);
