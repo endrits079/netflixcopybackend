@@ -17,11 +17,15 @@ if(isset($_POST['register'])){
     $fnameValid = ValidateInputs::ValidateName($fname);
     $passwordValid = ValidateInputs::ValidatePassword($password,$confirm_password);
     $usernameValid = ValidateInputs::ValidateUsername($username,$connect);
+    $emailValid = ValidateInputs::ValidateEmail($email);
     if($usernameValid!='true'){
         $message=$usernameValid;
     }
     else if($fnameValid!= 'true'){
         $message=$fnameValid;
+    }
+    else if($emailValid!='true'){
+        $message=$emailValid;
     }
     else if($passwordValid!='true'){
         $message=$passwordValid;

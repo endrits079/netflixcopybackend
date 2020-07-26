@@ -32,6 +32,16 @@ class ValidateInputs{
     }
     return true;
     }
+    public static function ValidateEmail($email){
+       
+        if(strlen($email)<5 || strlen($email)>50){
+            return "Email must be between 5 and 50 characters long";
+        }
+        else if (!filter_var($email,FILTER_VALIDATE_EMAIL)){
+            return "Please enter a valid email address";
+        }
+        return true;
+    }
   
 }
 
