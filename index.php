@@ -2,6 +2,8 @@
 require_once('./includes/db.php');
 require_once('./includes/classes/FormSanitizer.php');
 require_once('./includes/classes/ValidateInputs.php');
+require_once('./includes/classes/PreviewProvider.php');
+require_once('./includes/classes/CategoryContainers.php');
 header('Access-Control-Allow-Origin:*');
 $message ='';
 $succeed=false;
@@ -63,4 +65,13 @@ if(isset($_POST['login'])){
     echo json_encode($array);
 }
 
+if(isset($_POST['getPreview'])){
+$provider = new PreviewProvider($connect);
+$provider->createPreviewVideo(null);
+}
+
+if(isset($_POST['getCategories'])){
+    $category = new CategoryContainers($connect);
+    $category->showAllCategories();
+}
 ?>

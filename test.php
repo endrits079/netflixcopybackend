@@ -1,9 +1,9 @@
 <?php
 require_once('./includes/db.php');
-$username = 'abc';
 
-if($username!=true){
-    echo ' good';
-}
-  
+$query = "SELECT * FROM categories";
+$result = mysqli_query($connect,$query);
+$myarray = array();
+
+
 ?>
