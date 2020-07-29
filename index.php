@@ -33,4 +33,12 @@ if(isset($_POST['getMovie'])){
     }
 }
 
+if(isset($_POST['updateViews'])){
+    $id=$_POST['id'];
+    $query = "UPDATE videos SET views=views+1 WHERE id=$id";
+    mysqli_query($connect,$query);
+    
+
+}
+
 ?>
