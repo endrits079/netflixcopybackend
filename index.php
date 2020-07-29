@@ -25,6 +25,12 @@ if(isset($_POST['getCategories'])){
 
 if(isset($_POST['getMovie'])){
     $provider = new PreviewProvider($connect);
-    $provider->createPreviewVideo($_POST['id']);
+    $movie = $provider->createPreviewVideo($_POST['id']);
+    if($movie!='false'){
+     $seasons = $provider->getSeasons($_POST['id']);
+
+     print_r(json_encode(array('movie'=>$movie,'seasons'=>$seasons)));
+    }
 }
+
 ?>

@@ -9,8 +9,29 @@ class PreviewProvider{
             $entity = $this->getRandomEntity();
         }
         else {
-           $entity=$this->getEntityById($entity);
+           return $this->getEntityById($entity);
         }
+    }
+    public function getSeasons($entity){
+        $sameSeason = array();
+        $allData = array();
+        $query = "SELECT COUNT(DISTINCT season) FROM videos WHERE entityId=$entity";
+        $result =mysqli_query($this->connect,$query);
+        $count = mysqli_fetch_array($result)[0];
+        for($i=1;$i<=$count;$i++){
+            $query = "SELECT * FROM videos WHERE entityId=$entity AND season=$i";
+            $result =mysqli_query($this->connect,$query);
+            $sameSeason['season']=$i;
+            $sameSeason['data']=array();
+            while($row = mysqli_fetch_assoc($result)){
+                extract($row);
+                array_push($sameSeason['data'],$row);
+            }
+            array_push($allData,$sameSeason);
+            $sameSeason= array();
+        }
+
+        return json_encode($allData) ;
     }
     private function getEntityById($id){
         $query = "SELECT * from entities WHERE id =$id";
@@ -19,10 +40,10 @@ class PreviewProvider{
         if(!empty($result)){
         extract($result);
         $data = array("image"=>$thumbnail,"video"=>$preview,"name"=>$name);
-        echo json_encode($data);
+        return json_encode($data);
         }
         else {
-            echo 'false';
+           return 'false';
         }
 
     }
