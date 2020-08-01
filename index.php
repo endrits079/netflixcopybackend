@@ -73,5 +73,25 @@ if(isset($_POST['updateProgress'])){
     }
 
 }
+  if(isset($_POST['getProgress'])){
+      $user = $_POST['user'];
+      $video = $_POST['video'];
+      $query = "SELECT progress FROM videos_progress WHERE user=$user AND video=$video";
+      $result = mysqli_query($connect,$query);
+      if($result->num_rows>0){
+          $progress = mysqli_fetch_assoc($result)['progress'];
+          
+          echo (json_encode(array('startTime'=>$progress)));
+      }
+      else {
+          echo 'false';
+      }
+  }
+  if(isset($_POST['finishedVideo'])){
+      $user = $_POST['user'];
+      $video = $_POST['video'];
 
+      $query = "UPDATE videos_progress SET finished=1,progress=0 WHERE user=$user AND video=$video";
+      mysqli_query($connect,$query);
+  }
 ?>
