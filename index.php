@@ -41,4 +41,37 @@ if(isset($_POST['updateViews'])){
 
 }
 
+if(isset($_POST['getVideo'])){
+    $id = $_POST['id'];
+    $query="SELECT * FROM videos WHERE id=$id";
+    $result = mysqli_query($connect,$query);
+    if($result->num_rows>0){
+    $row=mysqli_fetch_assoc($result);
+    echo json_encode($row);
+    }
+    else{
+        echo 'false';
+    }
+
+}
+
+
+if(isset($_POST['updateProgress'])){
+    $user = $_POST['user'];
+    $video = $_POST['video'];
+    $time = $_POST['time'];
+
+    $query = "SELECT id FROM videos_progress WHERE user=$user AND video=$video";
+    $result = mysqli_query($connect,$query);
+    if($result->num_rows>0){
+        $query = "UPDATE videos_progress SET progress=$time,modified_date=NOW() WHERE user=$user AND video=$video";
+        mysqli_query($connect,$query);
+    }
+    else{
+        $query = "INSERT INTO videos_progress(user,video,progress,modified_date) VALUES ($user,$video,$time,NOW())";
+        mysqli_query($connect,$query);
+    }
+
+}
+
 ?>
