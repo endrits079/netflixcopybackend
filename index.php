@@ -94,4 +94,26 @@ if(isset($_POST['updateProgress'])){
       $query = "UPDATE videos_progress SET finished=1,progress=0 WHERE user=$user AND video=$video";
       mysqli_query($connect,$query);
   }
+
+
+
+  if(isset($_POST['getNextVideo'])){
+    $episode = $_POST['episode'];
+    $season = $_POST['season'];
+    $entity = $_POST['entity'];
+    $title = $_POST['title'];
+    $id = $_POST['id'];
+
+    $query = "SELECT * FROM videos WHERE entityId=$entity AND title='$title' AND id!=$id AND ((episode>$episode AND season=$season) OR season>$season) ORDER BY season,episode ASC LIMIT 1";
+    $result = mysqli_query($connect,$query);
+
+    if ($result->num_rows>0){
+        $row = mysqli_fetch_assoc($result);
+        echo json_encode($row);
+    }
+    else { echo 'false';}
+    
+}
+
 ?>
+
