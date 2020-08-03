@@ -100,11 +100,10 @@ if(isset($_POST['updateProgress'])){
   if(isset($_POST['getNextVideo'])){
     $episode = $_POST['episode'];
     $season = $_POST['season'];
-    $entity = $_POST['entity'];
     $title = $_POST['title'];
     $id = $_POST['id'];
 
-    $query = "SELECT * FROM videos WHERE entityId=$entity AND title='$title' AND id!=$id AND ((episode>$episode AND season=$season) OR season>$season) ORDER BY season,episode ASC LIMIT 1";
+    $query = "SELECT * FROM videos WHERE  title='$title' AND id!=$id AND ((episode>$episode AND season=$season) OR season>$season) ORDER BY season,episode ASC LIMIT 1";
     $result = mysqli_query($connect,$query);
 
     if ($result->num_rows>0){
