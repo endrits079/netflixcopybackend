@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 29, 2020 at 11:30 AM
+-- Generation Time: Aug 06, 2020 at 01:11 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -325,7 +325,7 @@ INSERT INTO `videos` (`id`, `title`, `description`, `filePath`, `isMovie`, `uplo
 (159, 'Silver Twilight', 'Dictum finibus facilisis ligula phasellus molestie ex primis tempus sagittis nostra potenti bibendum dignissim morbi. Nunc posuere vivamus, ipsum sit ', 'entities/videos/3.mp4', 0, '2019-10-12 22:07:53', '2009-04-04', 0, '32:44', 4, 11, 3),
 (160, 'The Licking Flowers', 'Nulla id faucibus orci morbi, at finibus scelerisque aliquam felis libero nisl. Condimentum lectus blandit. Amet a tortor primis pretium arcu quam dic', 'entities/videos/2.mp4', 0, '2019-10-12 22:07:53', '2016-08-09', 0, '34:37', 4, 12, 3),
 (161, 'Toy Story', 'Non lacus maecenas leo quisque ultrices platea enim accumsan. Ipsum luctus ultrices cursus hendrerit tempus hac. Nec augue sollicitudin tristique, ves', 'entities/videos/3.mp4', 1, '2019-10-12 22:07:53', '2000-08-14', 0, '25:51', 0, 0, 4),
-(196, 'Birch of Trainer', 'Lobortis ultrices varius et tempus sagittis conubia duis. Dolor nibh ligula vehicula. Lacinia quis proin eu taciti litora netus. Malesuada ut quis pri', 'entities/videos/2.mp4', 0, '2019-10-12 22:07:53', '2002-06-29', 0, '31:30', 1, 1, 45),
+(196, 'Birch of Trainer', 'Lobortis ultrices varius et tempus sagittis conubia duis. Dolor nibh ligula vehicula. Lacinia quis proin eu taciti litora netus. Malesuada ut quis pri', 'entities/videos/2.mp4', 0, '2019-10-12 22:07:53', '2002-06-29', 1, '31:30', 1, 1, 45),
 (197, 'The Tale\'s Door', 'Mi metus mauris suspendisse ex massa proin hendrerit condimentum pellentesque sociosqu litora nam imperdiet morbi. Adipiscing mi at volutpat aliquam u', 'entities/videos/6.mp4', 0, '2019-10-12 22:07:53', '2017-04-05', 0, '49:29', 1, 2, 45),
 (198, 'Shard of Dragon', 'Nulla ac massa vivamus sodales. Sit in erat massa per. Nulla nisi ex varius cubilia porttitor quam condimentum nostra eros habitant. Vitae vestibulum ', 'entities/videos/1.mp4', 0, '2019-10-12 22:07:53', '2005-08-25', 0, '32:28', 1, 3, 45),
 (199, 'The Dwindling Voyage', 'Malesuada erat viverra facilisis semper faucibus aptent taciti sem senectus. Auctor ante vivamus nostra. Nulla sed lobortis tortor posuere quam vel en', 'entities/videos/6.mp4', 0, '2019-10-12 22:07:53', '2015-10-19', 0, '46:28', 1, 4, 45),
@@ -355,7 +355,7 @@ INSERT INTO `videos` (`id`, `title`, `description`, `filePath`, `isMovie`, `uplo
 (223, 'The Dwindling Voyage', 'Adipiscing viverra metus ut semper ex posuere nullam taciti, interdum est scelerisque aliquam dapibus nullam porttitor aptent himenaeos potenti, mi pu', 'entities/videos/4.mp4', 0, '2019-10-12 22:07:53', '2009-11-18', 0, '27:53', 3, 8, 45),
 (224, 'Voyager in the Lord', 'Ipsum nulla platea libero per sodales aliquet nisl. Egestas tincidunt curae himenaeos magna. Mi viverra tellus nisi curae arcu habitasse ad torquent. ', 'entities/videos/2.mp4', 0, '2019-10-12 22:07:53', '2014-08-18', 0, '22:14', 3, 9, 45),
 (225, 'Some Sliver', 'Sed metus luctus leo cubilia habitasse torquent inceptos suscipit nam tristique. Vestibulum curae proin nullam consequat porta curabitur. Etiam quis a', 'entities/videos/2.mp4', 0, '2019-10-12 22:07:53', '2007-01-11', 0, '41:19', 3, 10, 45),
-(226, 'Obsession in the Spark', 'Malesuada leo quisque tempor varius platea fames. Mi velit nibh eleifend varius gravida sem. Dolor mi erat vestibulum nibh a integer quisque semper al', 'entities/videos/4.mp4', 0, '2019-10-12 22:07:53', '2015-09-15', 0, '33:37', 1, 1, 46),
+(226, 'Obsession in the Spark', 'Malesuada leo quisque tempor varius platea fames. Mi velit nibh eleifend varius gravida sem. Dolor mi erat vestibulum nibh a integer quisque semper al', 'entities/videos/4.mp4', 0, '2019-10-12 22:07:53', '2015-09-15', 1, '33:37', 1, 1, 46),
 (227, 'Silver Twilight', 'Amet praesent erat velit luctus feugiat tincidunt ornare tempus pellentesque inceptos sodales dignissim morbi cras, est phasellus aptent. Lorem dictum', 'entities/videos/4.mp4', 0, '2019-10-12 22:07:53', '2018-06-20', 0, '21:46', 1, 2, 46),
 (228, 'The Female of the Twins', 'Ac orci per duis, amet non lacus curae dapibus tempus maximus magna elementum diam ullamcorper. Sit tincidunt ultrices posuere pharetra euismod vulput', 'entities/videos/2.mp4', 0, '2019-10-12 22:07:53', '2017-11-03', 0, '22:18', 1, 3, 46),
 (229, 'The Tale\'s Door', 'Ipsum id ultricies ornare arcu vel potenti elementum. Ipsum semper dui efficitur congue diam tristique, maecenas mattis metus quisque tellus massa hab', 'entities/videos/4.mp4', 0, '2019-10-12 22:07:53', '2016-07-24', 0, '31:45', 1, 4, 46),
@@ -803,10 +803,10 @@ INSERT INTO `videos` (`id`, `title`, `description`, `filePath`, `isMovie`, `uplo
 (668, 'The Shadowy Death', 'Placerat nec ut posuere cubilia gravida efficitur aptent blandit suscipit imperdiet sem tristique. Eleifend tortor fringilla ornare tempus accumsan er', 'entities/videos/3.mp4', 0, '2019-10-12 22:07:53', '2011-05-16', 0, '43:41', 2, 9, 57),
 (669, 'Sliver in the Weeping', 'Non volutpat integer massa fringilla pharetra quam hac enim rhoncus congue. Finibus mauris lacinia convallis fusce tempus fermentum magna enim. Sed a ', 'entities/videos/5.mp4', 0, '2019-10-12 22:07:53', '2008-10-07', 0, '21:12', 2, 10, 57),
 (670, 'Shard of Dragon', 'Sed placerat volutpat leo aliquam primis nullam vulputate pellentesque taciti neque nam. Adipiscing malesuada torquent. Lorem placerat quis orci torqu', 'entities/videos/4.mp4', 0, '2019-10-12 22:07:53', '2010-10-16', 0, '48:21', 2, 11, 57),
-(671, 'Grease', 'Dolor id luctus quisque semper dapibus vulputate porttitor sagittis class fermentum curabitur sodales habitant. Non sed at ex massa hac habitasse ferm', 'entities/videos/3.mp4', 1, '2019-10-12 22:07:53', '2012-08-17', 1, '47:53', 0, 0, 58),
+(671, 'Grease', 'Dolor id luctus quisque semper dapibus vulputate porttitor sagittis class fermentum curabitur sodales habitant. Non sed at ex massa hac habitasse ferm', 'entities/videos/3.mp4', 1, '2019-10-12 22:07:53', '2012-08-17', 0, '47:53', 0, 0, 58),
 (675, 'Paddington Bear', 'Sapien eleifend efficitur, vestibulum luctus lacinia sollicitudin class imperdiet tristique. Interdum placerat erat viverra justo ultricies pharetra e', 'entities/videos/3.mp4', 1, '2019-10-12 22:07:53', '2000-11-07', 0, '48:18', 0, 0, 59),
 (685, 'Sliver in the Weeping', 'Velit dapibus suscipit. Ipsum nunc quis nisi ornare consequat pellentesque efficitur rhoncus suscipit eros senectus, velit finibus mattis feugiat inte', 'entities/videos/1.mp4', 1, '2019-10-12 22:07:53', '2017-10-02', 0, '50:54', 1, 1, 60),
-(693, 'Silver Twilight', 'In lacus id lacinia venenatis convallis varius cubilia eu vivamus inceptos, lorem amet consectetur suspendisse phasellus proin porttitor class netus. ', 'entities/videos/5.mp4', 0, '2019-10-12 22:07:53', '2007-10-07', 1, '34:38', 1, 1, 61),
+(693, 'Silver Twilight', 'In lacus id lacinia venenatis convallis varius cubilia eu vivamus inceptos, lorem amet consectetur suspendisse phasellus proin porttitor class netus. ', 'entities/videos/5.mp4', 0, '2019-10-12 22:07:53', '2007-10-07', 0, '34:38', 1, 1, 61),
 (694, 'Silver Twilight', 'Interdum in id ut pharetra consequat platea porta curabitur ullamcorper. Praesent non sed at feugiat a mollis scelerisque quis ex primis posuere dapib', 'entities/videos/1.mp4', 0, '2019-10-12 22:07:53', '2006-03-11', 0, '30:14', 1, 2, 61),
 (695, 'The Licking Flowers', 'Velit cursus augue. Ipsum elit etiam vitae eleifend scelerisque quam pellentesque aenean. Adipiscing malesuada etiam vestibulum nibh tempor tellus var', 'entities/videos/4.mp4', 0, '2019-10-12 22:07:53', '2016-03-25', 0, '29:35', 1, 3, 61),
 (696, 'Seventh Fire', 'Amet at feugiat venenatis cubilia gravida eu vel fermentum rhoncus congue. Auctor phasellus vulputate arcu sociosqu neque. Mattis augue pretium sagitt', 'entities/videos/3.mp4', 0, '2019-10-12 22:07:53', '2002-07-30', 0, '45:28', 1, 4, 61),
@@ -815,7 +815,7 @@ INSERT INTO `videos` (`id`, `title`, `description`, `filePath`, `isMovie`, `uplo
 (699, 'The Women of the Roses', 'Etiam mauris ligula nunc ut primis dapibus imperdiet, mi etiam tincidunt suspendisse quis ultrices primis condimentum pellentesque inceptos himenaeos ', 'entities/videos/5.mp4', 0, '2019-10-12 22:07:53', '2001-05-02', 0, '25:57', 1, 7, 61),
 (700, 'Sliver in the Weeping', 'Sed maecenas tellus fringilla libero. Sapien placerat at maecenas justo facilisis felis varius curae pharetra tempus class suscipit dignissim fames, e', 'entities/videos/2.mp4', 0, '2019-10-12 22:07:53', '2010-11-09', 0, '34:55', 1, 8, 61),
 (701, 'Sliver in the Weeping', 'Interdum erat justo tortor mollis tellus molestie fermentum vehicula, sed erat velit molestie ornare sagittis aptent odio rhoncus diam. Adipiscing lac', 'entities/videos/1.mp4', 0, '2019-10-12 22:07:53', '2019-04-05', 0, '29:33', 1, 9, 61),
-(702, 'Grey Sparks', 'Praesent lacus sed at pulvinar eget pretium per fermentum. Nulla mattis mauris et nullam hac sagittis vel litora duis dignissim risus. Lorem leo eleif', 'entities/videos/4.mp4', 1, '2019-10-12 22:07:53', '2002-04-10', 0, '38:21', 1, 1, 62),
+(702, 'Grey Sparks', 'Praesent lacus sed at pulvinar eget pretium per fermentum. Nulla mattis mauris et nullam hac sagittis vel litora duis dignissim risus. Lorem leo eleif', 'entities/videos/4.mp4', 1, '2019-10-12 22:07:53', '2002-04-10', 4, '38:21', 1, 1, 62),
 (714, 'Voyager in the Lord', 'Faucibus et proin ultricies lectus, ac orci enim. Erat mattis vestibulum suspendisse euismod tempus ad fames aenean. Ipsum amet erat ac faucibus ferme', 'entities/videos/6.mp4', 1, '2019-10-12 22:07:53', '2016-09-10', 0, '42:56', 1, 1, 63),
 (794, 'Grey Sparks', 'Mauris semper tortor mollis scelerisque dignissim morbi. Ipsum finibus fringilla sociosqu per fermentum rhoncus suscipit morbi, semper curabitur laore', 'entities/videos/4.mp4', 1, '2019-10-12 22:07:53', '2004-10-22', 0, '28:13', 1, 1, 64),
 (902, 'The Tale\'s Door', 'Mi at vestibulum quisque et pretium quam tempus hac himenaeos diam fames. Interdum feugiat lectus risus, nulla suspendisse nunc varius ante sagittis e', 'entities/videos/1.mp4', 1, '2019-10-12 22:07:53', '2007-02-18', 0, '32:11', 1, 1, 66),
@@ -992,7 +992,7 @@ INSERT INTO `videos` (`id`, `title`, `description`, `filePath`, `isMovie`, `uplo
 (1258, 'Name of Elves', 'In malesuada maecenas suspendisse tempor primis consequat dui cras. Lorem egestas justo nibh phasellus et dapibus arcu per blandit bibendum. Feugiat e', 'entities/videos/3.mp4', 0, '2019-10-12 22:07:53', '2008-08-01', 0, '44:59', 4, 8, 83),
 (1259, 'Light in the Mage', 'Viverra quisque auctor ultrices eget morbi, amet viverra a felis varius curae sagittis libero laoreet, interdum egestas luctus venenatis pellentesque ', 'entities/videos/2.mp4', 0, '2019-10-12 22:07:53', '2003-07-15', 0, '48:24', 4, 9, 83),
 (1260, 'The Tale\'s Door', 'Arcu consequat eu donec elementum diam. Lorem mi mauris a integer ligula cubilia sagittis pellentesque aptent taciti congue, tortor enim risus. Malesu', 'entities/videos/1.mp4', 0, '2019-10-12 22:07:53', '2018-08-22', 0, '22:49', 4, 10, 83),
-(1261, 'The Dwindling Voyage', 'Malesuada lobortis pulvinar varius proin augue nullam taciti conubia, dolor ante augue turpis magna elementum aenean. Egestas sed nunc nec pellentesqu', 'entities/videos/5.mp4', 0, '2019-10-12 22:07:53', '2018-12-13', 1, '33:33', 1, 1, 84),
+(1261, 'The Dwindling Voyage', 'Malesuada lobortis pulvinar varius proin augue nullam taciti conubia, dolor ante augue turpis magna elementum aenean. Egestas sed nunc nec pellentesqu', 'entities/videos/5.mp4', 0, '2019-10-12 22:07:53', '2018-12-13', 0, '33:33', 1, 1, 84),
 (1262, 'Voyager in the Lord', 'Elit at justo mauris nunc tellus ultricies ornare inceptos potenti. Mi nunc quisque turpis curabitur, tortor scelerisque sociosqu congue. Id tincidunt', 'entities/videos/5.mp4', 0, '2019-10-12 22:07:53', '2016-02-07', 0, '50:54', 1, 2, 84),
 (1263, 'Sliver in the Weeping', 'Nibh molestie class himenaeos. Lorem etiam faucibus nullam enim cras. Maecenas volutpat metus auctor ultrices primis consequat platea vel dignissim, j', 'entities/videos/1.mp4', 0, '2019-10-12 22:07:53', '2008-03-19', 0, '37:40', 1, 3, 84),
 (1264, 'The Women of the Roses', 'Metus faucibus arcu platea dictumst enim nam morbi. Mi suspendisse ultrices ornare sodales accumsan sem senectus, justo vestibulum nibh cubilia augue ', 'entities/videos/6.mp4', 0, '2019-10-12 22:07:53', '2006-02-07', 0, '40:51', 1, 4, 84),
@@ -1048,7 +1048,7 @@ INSERT INTO `videos` (`id`, `title`, `description`, `filePath`, `isMovie`, `uplo
 (1314, 'The Tale\'s Door', 'Luctus integer auctor mollis ante primis curae sociosqu nostra congue neque duis elementum habitant morbi, amet scelerisque molestie vivamus taciti so', 'entities/videos/6.mp4', 0, '2019-10-12 22:07:53', '2012-02-08', 0, '43:39', 2, 1, 87),
 (1315, 'The Dreamer\'s Flame', 'Praesent mi lacus eleifend auctor cursus primis tempus gravida torquent magna odio, lacus est fusce posuere eget pellentesque. Dictum maecenas leo a p', 'entities/videos/5.mp4', 0, '2019-10-12 22:07:53', '2002-12-26', 0, '46:22', 2, 2, 87),
 (1316, 'The Force of the Silence', 'Amet suspendisse sollicitudin tempus aptent congue duis. Dictum mauris sem risus habitant, integer pulvinar est molestie purus ex proin dictumst commo', 'entities/videos/5.mp4', 0, '2019-10-12 22:07:53', '2006-06-10', 0, '26:59', 2, 3, 87),
-(1317, 'The Dreamer\'s Flame', 'Tempus class diam netus, dictum est eros habitant fames. Lobortis mauris cursus per conubia magna elementum diam tristique nisl. Adipiscing interdum s', 'entities/videos/1.mp4', 0, '2019-10-12 22:07:53', '2010-10-24', 3, '36:43', 2, 4, 87),
+(1317, 'The Dreamer\'s Flame', 'Tempus class diam netus, dictum est eros habitant fames. Lobortis mauris cursus per conubia magna elementum diam tristique nisl. Adipiscing interdum s', 'entities/videos/1.mp4', 0, '2019-10-12 22:07:53', '2010-10-24', 0, '36:43', 2, 4, 87),
 (1318, 'Sliver in the Weeping', 'Mi erat aptent turpis donec ullamcorper. Lorem lacus placerat mattis eleifend purus felis litora himenaeos duis aenean. Maecenas mattis luctus feugiat', 'entities/videos/1.mp4', 0, '2019-10-12 22:07:53', '2013-11-19', 0, '22:13', 2, 5, 87),
 (1319, 'Name of Elves', 'Non a nullam pretium condimentum maximus aptent torquent magna vehicula risus tristique. Elit in etiam ac suspendisse augue eu elementum aenean. Etiam', 'entities/videos/2.mp4', 0, '2019-10-12 22:07:53', '2001-01-09', 0, '42:24', 2, 6, 87),
 (1320, 'The Female of the Twins', 'Vestibulum a tempor scelerisque aliquam hendrerit aptent donec imperdiet morbi, dolor nulla etiam semper et ultricies pretium vulputate condimentum ad', 'entities/videos/3.mp4', 0, '2019-10-12 22:07:53', '2014-07-29', 0, '26:13', 2, 7, 87),
@@ -1669,6 +1669,36 @@ INSERT INTO `videos` (`id`, `title`, `description`, `filePath`, `isMovie`, `uplo
 (1932, 'The Women of the Roses', 'Placerat et dictumst lectus libero himenaeos potenti. Cubilia libero risus. Etiam justo lacinia felis primis eget efficitur ad dignissim aenean. Suspe', 'entities/videos/1.mp4', 0, '2019-10-12 22:07:53', '2006-07-26', 0, '24:31', 2, 9, 99),
 (1933, 'Name of Elves', 'Interdum in lacus habitasse. Finibus vitae pulvinar felis sagittis pellentesque elementum vehicula tristique nisl, amet eleifend tempor proin dapibus ', 'entities/videos/4.mp4', 1, '2019-10-12 22:07:53', '2016-08-04', 0, '44:11', 0, 0, 65);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `videos_progress`
+--
+
+CREATE TABLE `videos_progress` (
+  `id` int(11) NOT NULL,
+  `user` int(11) NOT NULL,
+  `video` int(11) NOT NULL,
+  `progress` int(11) NOT NULL,
+  `finished` tinyint(4) NOT NULL DEFAULT 0,
+  `modified_date` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `videos_progress`
+--
+
+INSERT INTO `videos_progress` (`id`, `user`, `video`, `progress`, `finished`, `modified_date`) VALUES
+(1, 2, 17, 0, 1, '2020-08-03 23:28:36'),
+(2, 2, 702, 10, 1, '2020-08-05 13:34:18'),
+(3, 2, 35, 9, 1, '2020-08-03 23:21:31'),
+(4, 2, 105, 3, 0, '2020-08-03 00:52:36'),
+(5, 2, 54, 0, 1, '2020-08-03 23:15:47'),
+(6, 2, 1652, 0, 1, '2020-08-03 23:28:53'),
+(7, 2, 1305, 0, 1, '2020-08-03 23:30:46'),
+(8, 2, 1577, 3, 0, '2020-08-03 23:33:44'),
+(9, 2, 55, 8, 0, '2020-08-06 00:35:54');
+
 --
 -- Indexes for dumped tables
 --
@@ -1701,6 +1731,14 @@ ALTER TABLE `videos`
   ADD KEY `entityId` (`entityId`);
 
 --
+-- Indexes for table `videos_progress`
+--
+ALTER TABLE `videos_progress`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `video` (`video`),
+  ADD KEY `user` (`user`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -1729,6 +1767,12 @@ ALTER TABLE `videos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1934;
 
 --
+-- AUTO_INCREMENT for table `videos_progress`
+--
+ALTER TABLE `videos_progress`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
 -- Constraints for dumped tables
 --
 
@@ -1743,6 +1787,13 @@ ALTER TABLE `entities`
 --
 ALTER TABLE `videos`
   ADD CONSTRAINT `videos_ibfk_1` FOREIGN KEY (`entityId`) REFERENCES `entities` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `videos_progress`
+--
+ALTER TABLE `videos_progress`
+  ADD CONSTRAINT `videos_progress_ibfk_1` FOREIGN KEY (`video`) REFERENCES `videos` (`id`),
+  ADD CONSTRAINT `videos_progress_ibfk_2` FOREIGN KEY (`user`) REFERENCES `users` (`id_user`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
