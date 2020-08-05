@@ -10,6 +10,7 @@ $succeed=false;
 $array = array();
 include('./includes/register.php');
 include('./includes/login.php');
+include('./functions.php');
 
 
 
