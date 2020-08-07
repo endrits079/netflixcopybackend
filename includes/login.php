@@ -10,7 +10,7 @@ if(isset($_POST['login'])){
     }
     else {
         extract($result);
-        $message = array('id'=>$id_user,'username'=>$username,'user_type'=>$user_type);
+        $message = array('id'=>$id_user,'username'=>$username,'user_type'=>$user_type,'email'=>$email,'name'=>$first_name,'last_name'=>$last_name,'subscribed'=>$is_subscribed);
         $message = json_encode($message);
         $succeed=true;
     }
